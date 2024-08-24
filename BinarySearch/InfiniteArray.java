@@ -21,7 +21,7 @@ public class InfiniteArray {
         while (target > arr[end]) {
             int temp = end + 1;
 
-            //double the box size ---> previous end + (size of box * 2)
+            //double the box size ---> previous end + (size of box ) * 2
             end = end + (end - start + 1) * 2; // This formula will prevent the array out of bound error
             // This is formula to calculate length of str
             
