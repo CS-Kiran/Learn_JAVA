@@ -11,7 +11,10 @@ public class BubbleSort {
         System.out.println(Arrays.toString(arr));
     }
 
+    // Here we can add boolean swap = false;  --> that will break the loop if array is sorted. 
     static void bubbleSort(int[] arr) {
+        //  boolean swap = false;
+        
         // run steps n-1 times
         for (int i = 0; i < arr.length; i++) {
             
@@ -21,8 +24,10 @@ public class BubbleSort {
                     int temp = arr[j];
                     arr[j] = arr[j - 1];
                     arr[j - 1] = temp;
+                    // swap = true;
                 }
             }
+            //  if(!swap)    break;
         }
     }
 }
